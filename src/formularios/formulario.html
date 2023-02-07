@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action = "" method = "post">
+    <fieldset name = "contato"> 
+      <legend> Preencha formulario de contato </legend>
+    </fieldset>
+    <button type ="button"> Enviar </button>
+
+            <label for="teacher">Professores</label>
+            <select name="select-teacher" id="teacher" size="" multiple>
+                <option value="">Selecione um professor</option>
+                <option value="Bruna">Bruna</option>
+            </select>
+            <br><br>
+
+            <label for="area"> Qual sua area de interesse? </label>
+    <div>
+        <input type="checkbox" name="interesse" id="front" value="front Bruna">
+        <label for="front">Bruna</label>
+    </div>
+    <br><br><br>
+    <h3>deseja receber notificação?</h3>
+    <label for="yes">Sim</label>
+    <input type="radio" id="yes" name="notification" value="yes">
+    <label for="no">Não</label>
+    <input type="radio" id="no" name="notification" value="no">
+
+
+            <input type="text"
+        placeholder="Preencha o seu nome"
+        size="100"
+        minlength="8"
+        maxlength="20"
+        title="Preencha com mais 8 caracteres e menos que 20"
+        required
+        >
+        <input type="number"
+        size="100"
+        minlength="7"
+        maxlength="14"
+        title="preencha dom o numero"
+        placeholder="digite um inteiro valido"
+        required
+        >
+        <input type="email"
+        size="100"
+        title="preencha o seu email"
+        placeholder="Insira o seu e-mail"
+        required 
+        >
+        <input type="password"
+        size="100"
+        title="preencha a senha"
+        placeholder="Sua senha precisa ser em hexadecimal"
+        pattern="[0-9a-fA-F]{4,8}"
+        required
+        inputmode="numeric"
+        >
+        <input type="hidden" value="hide on brush">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="week">
+        <input type="time">
+
+        <button type="submit">Enviar</button>
+    </fieldset>
+</form>
+<!-- <label>Nome:
+        <input type="text" id="nome">
+    </label>
+    <hr>
+    <label for="age">Idade:</label>
+    <input type="text" id="age">
+    <hr>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button">Button</button> 
+</form>-->
+  </form>
+</body>
+</html>
